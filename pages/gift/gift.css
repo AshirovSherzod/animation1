@@ -1,0 +1,156 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
+
+.gift {
+    position: relative;
+    /* top: 20px; */
+    /* background-color: black; */
+    width: 1300px;
+    height: 880px;
+}
+
+.gift__top__left {
+    position: absolute;
+    top: -100px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 40px 40px 0px 40px;
+    border: 15px solid white;
+    transition: 0.4s;
+    animation: giftTop1 4s normal forwards;
+    animation-delay: 4s;
+}
+
+.gift__top__right {
+    position: absolute;
+    top: -100px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 40px 40px 40px 0px;
+    border: 15px solid white;
+    transition: 0.4s;
+    animation: giftTop 4s normal forwards;
+    animation-delay: 4s;
+}
+
+.gift__middle__left {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    animation: giftMiddle 4s normal forwards;
+    /* animation-delay: 1s; */
+}
+
+.gift__middle__right {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    animation: giftMiddle1 4s normal forwards;
+    /* animation-delay: 5s; */
+
+}
+
+.gift__bottom__left {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    animation: giftBottom 4s normal forwards;
+    /* animation-delay: 5s; */
+}
+
+.gift__bottom__right {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    animation: giftBottom1 4s normal forwards;
+    /* animation-delay: 1s; */
+}
+
+
+@keyframes giftTop {
+    from {
+        top: 0;
+        left: 645px;
+    }
+
+    to {
+        top: 300px;
+        left: 645px;
+    }
+}
+
+@keyframes giftTop1 {
+    from {
+        top: 0;
+        left: 575px;
+    }
+
+    to {
+        top: 300px;
+        left: 575px;
+    }
+}
+
+@keyframes giftMiddle {
+    from {
+        top: 0;
+        left: 540px;
+    }
+
+    to {
+        top: 400px;
+        left: 540px;
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes giftMiddle1 {
+    from {
+        top: 400px;
+        left: 0;
+    }
+
+    to {
+        top: 400px;
+        left: 660px;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes giftBottom {
+    from {
+        top: 520px;
+        right: 0;
+    }
+
+    to {
+        top: 520px;
+        right: 660px;
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes giftBottom1 {
+    from {
+        right: 540px;
+        bottom: 0;
+    }
+
+    to {
+        bottom: 260px;
+        right: 540px;
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(37, 37, 37);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.entrense {
+    width: 440px;
+    height: 700px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 300px 300px 5px 5px;
+    background-color: blue;
+}
+
+.stair1 {
+    position: absolute;
+    width: 400px;
+    height: 80px;
+    background-color: rgb(37, 37, 37);
+    animation: intro1 4s infinite forwards;
+}
+
+.stair2 {
+    position: absolute;
+    width: 300px;
+    height: 80px;
+    background-color: rgb(37, 37, 37);
+    animation: intro2 4s infinite forwards;
+}
+
+.stair3 {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    background-color: rgb(37, 37, 37);
+    animation: intro3 4s infinite forwards;
+}
+
+.stair4 {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    bottom: 330px;
+    right: 0;
+    background-color: rgb(37, 37, 37);
+    animation: intro4 4s infinite forwards;
+}
+
+
+@keyframes intro1 {
+    from {
+        bottom: -100px;
+        right: -400px;
+    }
+
+    to {
+        bottom: 0;
+        right: 0;
+
+    }
+}
+
+@keyframes intro2 {
+    from {
+        bottom: -100px;
+        right: -300px;
+    }
+
+    to {
+        bottom: 110px;
+        right: 0;
+    }
+}
+
+@keyframes intro3 {
+    from {
+        bottom: -100px;
+        right: -200px;
+    }
+
+    to {
+        bottom: 220px;
+        right: 0;
+    }
+
+}
+
+@keyframes intro4 {
+    from {
+        bottom: -100px;
+        right: -100px;
+    }
+
+    to {
+        bottom: 330px;
+        right: 0;
+    }
+}
